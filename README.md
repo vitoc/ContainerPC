@@ -9,3 +9,16 @@ If I lose any of my physical computers, well, I’ll just lose the physical aspe
 If you have a good software to recommend, or a suggestion on how I can run my personal computer better, just do a Pull Request.
 
 The Private part of the personal computer in ContainerPC though lies in the volume. I'd yet to fixate on a specific solution to work this yet other than mounting with a VOLUME command. If you have any suggestion on a practical way to manage volume in such a way that supports the freedom and continuity objectives of this ContainerPC, it will be great to hear from you!
+
+How to use
+===========
+
+Currently:
+
+$ docker build -t brain:ContainerPC .
+$ docker run --privileged -it --name my_container -d brain:ContainerPC
+$ docker exec -it my_container bash
+
+To get KBFS within container:
+
+$ run_keybase
