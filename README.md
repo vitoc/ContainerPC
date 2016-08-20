@@ -15,10 +15,14 @@ How to use
 
 Currently:
 
+```bash
 $ docker build -t brain:ContainerPC .
 $ docker run --privileged -it --name my_container -d brain:ContainerPC
 $ docker exec -it my_container bash
+```
 
 To get KBFS within container:
 
+```bash
 $ run_keybase
+```
